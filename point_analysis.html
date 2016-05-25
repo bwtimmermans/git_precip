@@ -176,6 +176,25 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Other-pages">Other pages<a class="anchor-link" href="#Other-pages">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href=http://bwtimmermans.github.io/git_precip/prec_summary.html>Main summary page</a></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Point-analysis">Point analysis<a class="anchor-link" href="#Point-analysis">&#182;</a></h1>
 </div>
 </div>
@@ -204,7 +223,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This code extract some specified locations in the U.S.:</p>
+<p>This code extracts some specified locations in the U.S. (shown below):</p>
 <h3 id="Specific-points,-roughly-west-to-east.">Specific points, roughly west to east.<a class="anchor-link" href="#Specific-points,-roughly-west-to-east.">&#182;</a></h3><h3 id="Western-U.S.,--121.2-lon-and-+39.8-lat,-Plumas-County,-CA.-[36,80]">Western U.S., -121.2 lon and +39.8 lat, Plumas County, CA. [36,80]<a class="anchor-link" href="#Western-U.S.,--121.2-lon-and-+39.8-lat,-Plumas-County,-CA.-[36,80]">&#182;</a></h3><p>mat.loc.coords &lt;- rbind( c(func_lon_coord(-121.2),func_lat_coord(39.8)),</p>
 <h3 id="Northern-U.S.,--110.375-lon-and-+47.875-lat,-Fort-Benton,-MT-59442">Northern U.S., -110.375 lon and +47.875 lat, Fort Benton, MT 59442<a class="anchor-link" href="#Northern-U.S.,--110.375-lon-and-+47.875-lat,-Fort-Benton,-MT-59442">&#182;</a></h3>
 <pre><code>                       c(func_lon_coord(-110.375),func_lat_coord(47.875)),
@@ -236,17 +255,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The points were chosen on the basis of regional characeristics and correlation between the CPC and Maurer datasets. Some bivariate statistical analysis follows, which illuminates the differing characteristics of the locations, for different datasets.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>We start by considering the CPC and Livneh precipitation datasets. In this case, a 3 day moving average was used to alleviate problems associated with the intra-day timing of observations (see previous work).</p>
+<p>The points were chosen on the basis of regional characeristics and correlation between the CPC and Maurer datasets. Bivariate statistical analysis follows, which illuminates the differing characteristics of the locations, for different datasets.</p>
 
 </div>
 </div>
@@ -276,6 +285,35 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="CPC-and-Livneh">CPC and Livneh<a class="anchor-link" href="#CPC-and-Livneh">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We start by considering the CPC and Livneh precipitation datasets. In this case, a 3 day moving average was used to alleviate problems associated with the intra-day timing of observations (see previous work).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The figures below show scatterplots and chiplots for each location. The "raw" data are essentially unmodified, although corrupt data has been removed where present, and a chiplot is obtained for days where both datasets show rainfall below 0.5mm. The remaining figures are based upon 3 and 5 day moving averages of the same data. The magnitude of events is reduced by the averaging.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="PERSIANN-and-TRMM">PERSIANN and TRMM<a class="anchor-link" href="#PERSIANN-and-TRMM">&#182;</a></h2>
 </div>
 </div>
@@ -285,7 +323,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In the figures below analysis at each location is provided (5 groups of 6 figures). Notice that correlation is moderate, although tail dependence is demonstrable in the higher quantiles. Application of a moving average generally appears to improve tail dependence, although the impact is typically small.</p>
+<p>PERSIANN and TRMM are satellite derived products so we expect them to share some characteristics. In the figures below analysis at each location (see above) is provided (5 groups of 6 figures). Notice that correlation is moderate, although tail dependence is demonstrable in the higher quantiles. Application of a moving average generally appears to improve tail dependence, although the impact is typically small.</p>
 
 </div>
 </div>
@@ -296,15 +334,6 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><img src="./media/TRMM_PERSIANN_location_scatter_chi_plots.png"></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 
 </div>
 </div>
